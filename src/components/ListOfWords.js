@@ -7,15 +7,15 @@ export default function ListOfWords(props) {
   return (
     <>
       {words.map((word, i) => (
-        <li key={i} className="word-card">
-          <h4 className="bold">{word.original}</h4>
+        <section key={i} className="card">
+          <h4 className="title">{word.original}</h4>
           <p>
             correct answer count: <span>{word.correct_count}</span>
           </p>
           <p>
             incorrect answer count: <span>{word.incorrect_count}</span>
           </p>
-        </li>
+        </section>
       ))}
     </>
   );

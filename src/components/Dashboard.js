@@ -27,24 +27,25 @@ export default class Dashboard extends Component {
 
   render() {
     return (
-      <section>
-        <h1>You are learning</h1>
-        <h2>{this.context.language}</h2>
+      <section className='dashboard'>
+        <div className='top'>
+        <h2>You Are Learning</h2>
+        <h3>{this.context.language}</h3>
         <a id="learn" className="learn" href="/learn">
-          Start practicing
-        </a>
-        <h3>Words to practice</h3>
+          <button>Start Practice</button>
+        </a></div>
+        <h3>Practice Words</h3>
         <section className="cards">
           {this.context.words ? (
             <ListOfWords words={this.context.words} />
           ) : ( 'Loading'         
           )}
         </section>
-        <p>
+        <h3>
           {this.context.totalScore
             ? `Total correct answers: ${this.context.totalScore}`
             : null}
-        </p>
+        </h3>
       </section>
     );
   }

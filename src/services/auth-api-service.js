@@ -8,6 +8,7 @@ const AuthApiService = {
       headers: {
         'content-type': 'application/json',
       },
+     
       body: JSON.stringify(user),
     })
       .then(res =>
@@ -36,6 +37,7 @@ const AuthApiService = {
       headers: {
         'authorization': `Bearer ${TokenService.getAuthToken()}`,
       },
+      mode: 'no-cors'
     })
       .then(res =>
         (!res.ok)

@@ -15,7 +15,7 @@ export default class Feedback extends Component {
                
                     <button onClick={this.handleClick}>Try Another Word</button>
                
-                <div className="DisplayFeedback">
+                <div className="feedback-box">
                     <p>
                         The correct answer was {' '}
                         {this.context.response.answer}{' '}

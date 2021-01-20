@@ -1,17 +1,139 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
+  margin: 4% 15% 3% 15%;
   font-family: "Ubuntu", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #ADCAD6;
+}
+.header {
+  display:flex;
+  flex-direction: column;
+  background-color: #006E90 ;
+  padding: 3%;
+  color: #B7CE63;
+}
+.header h1{
+  font-size: 45px;
+  text-align: center;
+  color: #B7CE63;
+  margin: 2px;
+  font-weight: 900;
 }
 
+.header h3 {
+  text-align: center;
+  color: #B7CE63;
+}
+
+.header a {
+  margin: 2px;
+  padding: 6px;
+  box-shadow: #6395a5 1px 1px 1px 1px;
+  text-decoration: none;
+  background-color: #c0e0ee;
+ color: #006E90;
+ text-align: left;
+ font-size: 20px;
+ font-weight: 600;
+}
+
+.header p {
+  margin: 15px;
+  text-align: center;
+ font-size: 26px;
+ color:aliceblue;
+}
+.header a:hover {
+  background-color: #8FB339;
+  color: #f5f7ef;
+}
+form  { 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color:#41BBD9 ;
+  margin: 1% 20%;
+  padding: 3%;
+  
+}
+form label {
+font-size: 22px;
+color: #ffffff ;
+margin: 10px;
+padding: 8% 5px;
+
+}
+form input {
+  border: none;
+  padding: 5px;
+  margin-top: 2%;
+}
+
+.main {
+  border: 3px solid #006E90;
+  padding: 15px;
+  background-color: aliceblue;
+}
+
+h3 {
+  color: #095b74;
+  font-size: 25px;
+  margin: 10px;
+}
+ .top {
+  text-align: center;
+  font-size: 25px;
+  background-color: #41BBD9;
+  padding: 5px;
+  margin: 0;
+  border: 2px solid #006E90;
+  color: #095b74;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+ 
+}
+.card {
+  margin:6px;
+  border: 2px solid #006E90;
+  background-color: #bbdfee;
+  box-shadow: #6395a5 1px 1px 1px 1px;
+}
+.title {
+  background-color: #41BBD9 ;
+  border-bottom: 1px solid #006E90 ;
+  margin:0;
+  padding: 10px;
+  color:aliceblue;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+p {
+  margin: 6px;
+  padding: 8px;
+  font-size: 18px;
+  color: #0b4658;
+}
+.feedback {
+  margin: 6%;
+  text-align: center;
+  color:white;
+}
+.feedback-box {
+  border: 1px solid #0b4658;
+  background-color: #d5e2e7 ;
+  padding: 10px;
+  margin:6%;
+  font-size: 19px;
+}
 :root {
   --font-size: calc(10px + 1vmin);
 }

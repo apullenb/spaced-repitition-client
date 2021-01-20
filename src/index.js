@@ -6,7 +6,7 @@ import { UserProvider } from './contexts/UserContext'
 import App from './components/App/App'
 import './setup-icons'
 import './index.css'
-import * as serviceWorker from './serviceWorker'
+
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,4 +17,4 @@ ReactDOM.render(
   document.getElementById('root'),
 )
 
-serviceWorker.unregister()
+

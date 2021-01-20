@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import TokenService from "../../services/token-service";
 import UserContext from "../../contexts/UserContext";
 import Feedback from "../../components/Feedback";
+import { Link } from 'react-router-dom'
+
 
 import API from "../../config";
 class LearningRoute extends Component {
@@ -82,17 +84,21 @@ class LearningRoute extends Component {
     render() {
       return (
         <main className="box">
+           <Link
+            to='/'>
+            {'<- Back To Dashboard'}
+          </Link>
         <form onSubmit={(e) => this.submitForm(e, this.context)}>
-          {this.state.answer === null && <h2>Translate the word:</h2>}
+          {this.state.answer === null && <h2 style={{color:'white'}}>Translate the word:</h2>}
           {this.state.answer === "correct" && (
             <h2 className="feedback">That Is Correct!</h2>
           )}
           {this.state.answer === "incorrect" && (
             <h2 className="feedback">Good try, but that is incorrect! </h2>
           )}
-          <span className="word-to-guess">
+          <h3 style={{textAlign:'center', margin:'5px', paddingBottom:'18px'}}>
             {this.context.nextWord ? this.context.nextWord.nextWord : null}
-          </span>
+          </h3>
           <div>
             {this.context.isClicked === false && (
               <label htmlFor="input">
