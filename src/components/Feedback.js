@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import UserContext from "../contexts/UserContext";
-import { Link } from 'react-router-dom';
 
 
 export default class Feedback extends Component {

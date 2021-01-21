@@ -137,3 +137,25 @@ p {
 :root {
   --font-size: calc(10px + 1vmin);
 }
+
+
+
+@media screen and (max-width: 500px) {
+body {
+  margin: 10px 3px;
+}
+  .main{
+    padding: 2px;
+    margin: 1px;
+  }
+form {
+  margin: 3px;
+  padding: 3px;
+}
+form label {
+  margin: 2px;
+}
+form input {
+  margin: 3px ;
+}
+}
